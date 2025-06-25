@@ -24,12 +24,12 @@ int main() {
         cout << "End time? ";
         cin >> end_hour >> end_min >> end_sec;
         
-        // Räkna slut tid
+        // Beräkna slut tid
         int total_start_seconds = start_hour * 3600 + start_min * 60 + start_sec;
         int total_end_seconds = end_hour * 3600 + end_min * 60 + end_sec;
         
         if (total_end_seconds < total_start_seconds) {
-            total_end_seconds += 24 * 3600; // Add 24 hours
+            total_end_seconds += 24 * 3600; // Lägg till 24h
         }
         
         int finish_time_seconds = total_end_seconds - total_start_seconds;
