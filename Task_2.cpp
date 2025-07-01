@@ -49,7 +49,7 @@ int main() {
         }
     }
     
-    // Skriv resultat
+    // Skriv ut resultatet
     if (competitor_count == 0) {
         cout << "No competitors" << endl;
     } else {
