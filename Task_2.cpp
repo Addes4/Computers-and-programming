@@ -24,7 +24,7 @@ int main() {
         cout << "End time? ";
         cin >> end_hour >> end_min >> end_sec;
         
-        // Beräkna slut tid
+        // Räkna slut tid
         int total_start_seconds = start_hour * 3600 + start_min * 60 + start_sec;
         int total_end_seconds = end_hour * 3600 + end_min * 60 + end_sec;
         
@@ -39,7 +39,7 @@ int main() {
         
         competitor_count++;
         
-        // Check om det är bästa tiden
+        // Checka om det är bästa tiden
         if (first_competitor || finish_time_seconds < (best_time_hours * 3600 + best_time_min * 60 + best_time_sec)) {
             best_start_number = start_number;
             best_time_hours = finish_hours;
